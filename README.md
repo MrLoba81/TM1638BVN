@@ -6,4 +6,4 @@ The codebase has been grabbed from the great [tm1638-library](https://github.com
 This library has been developed in order to add specific functionalities for the [BVN display](https://katodo.com/it/lcd-tft-oled-display/656-display-led-8-cifre-8-segmenti-8-led-generici-bvn-s392rg2.html) that you can buy on [katodostore](https://katodo.com/it/)
 
 
-For more information have a look at [TM1638-Test Repo](https://github.com/MrLoba81/TM1638-Test)
+For more informations have a look at [TM1638-Test Repo](https://github.com/MrLoba81/TM1638-Test)
