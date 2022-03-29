@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For TM1638BVN
+#######################################
+ 
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+ 
+TM1638BVN	KEYWORD1
+Display     KEYWORD1
+ 
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+ 
+setStatusBar        KEYWORD2
+setPercentage       KEYWORD2
+clearDisplay        KEYWORD2
+printString         KEYWORD2
+printNumber         KEYWORD2
+setScrollingString  KEYWORD2
+clearScrolling      KEYWORD2
+loop                KEYWORD2
+#######################################
+# Constants (LITERAL1)
+#######################################
+SCRL_BASE_DEFAULT   LITERAL1
