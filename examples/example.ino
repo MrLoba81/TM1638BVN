@@ -2,6 +2,7 @@
 example.ino - A simple demostration for TM1638BVN Library.
 
 Copyright (C) 2022 Paolo Loberto - MrLoba81
+https://github.com/MrLoba81/TM1638BVN
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the version 3 GNU General Public License as
