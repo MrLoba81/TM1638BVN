@@ -47,13 +47,13 @@ void loop()
     statusBar = (statusBar + 1) % 4;
   }
 
-  if (curMillis - millisCheck >= 2000)
+  if (curMillis - millisCheck >= 500)
   {
     millisCheck = curMillis;
 
     display.printNumber(percentage, LOWER);
     display.setPercentage(percentage);
 
-    percentage = (percentage + 5) % 105;
+    percentage = (percentage + 1) % 101;
   }
 }
