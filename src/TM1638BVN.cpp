@@ -2,6 +2,7 @@
 TM1638BVN.cpp - Library implementation for TM1638BVN.
 
 Copyright (C) 2022 Paolo Loberto - MrLoba81
+https://github.com/MrLoba81/TM1638BVN
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the version 3 GNU General Public License as
@@ -109,15 +110,17 @@ void TM1638BVN::loop()
             }
         }
 
-        // update the percentage bar 
-        if ((this->percentage >= 12 && this->percentage <=24) ||
-            (this->percentage >= 36 && this->percentage <=48) ||
-            (this->percentage >= 60 && this->percentage <=72) ||
-            (this->percentage >= 84 && this->percentage <=96)) {            
-
+        // update the percentage bar
+        if ((this->percentage >= 12 && this->percentage <= 24) ||
+            (this->percentage >= 36 && this->percentage <= 48) ||
+            (this->percentage >= 60 && this->percentage <= 72) ||
+            (this->percentage > 84 && this->percentage <= 99))
+        {
             blinkPercentage = !blinkPercentage;
             this->_setPercentage(blinkPercentage);
-        } else {           
+        }
+        else
+        {
             blinkPercentage = false;
             this->_setPercentage(false);
         }
@@ -168,7 +171,8 @@ void TM1638BVN::_setPercentage(boolean blink)
     byte adr = 0x07;
 
     uint8_t level = (this->percentage / 25) % 5;
-    if (blink) level = (level + 1) % 5;
+    if (blink)
+        level = (level + 1) % 5;
 
     data = levels[level];
 
