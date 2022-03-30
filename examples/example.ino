@@ -1,3 +1,20 @@
+/*
+example.ino - A simple demostration for TM1638BVN Library.
+
+Copyright (C) 2022 Paolo Loberto - MrLoba81
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the version 3 GNU General Public License as
+published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 #include <TM1638BVN.h>
 
 const uint8_t strobe = 7;
@@ -20,9 +37,9 @@ void setup()
   display.clearDisplay(LOWER);
 
   delay(2000);
-  display.printNumber(123, UPPER);
+  display.printNumber(123, UPPER, 2);
   delay(2000);
-  display.printNumber(9876, LOWER);
+  display.printNumber(9876, LOWER, 4);
   delay(2000);
 
   delay(2000);
