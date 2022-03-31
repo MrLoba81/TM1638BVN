@@ -112,8 +112,8 @@ void TM1638BVN::loop()
 
         // update the percentage bar
         if ((this->percentage >= 12 && this->percentage <= 24) ||
-            (this->percentage >= 36 && this->percentage <= 48) ||
-            (this->percentage >= 60 && this->percentage <= 72) ||
+            (this->percentage >= 36 && this->percentage <= 49) ||
+            (this->percentage >= 60 && this->percentage <= 74) ||
             (this->percentage > 84 && this->percentage <= 99))
         {
             blinkPercentage = !blinkPercentage;
